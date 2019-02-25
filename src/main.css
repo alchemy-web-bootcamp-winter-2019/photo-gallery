@@ -16,14 +16,15 @@ h1 {
 }
 
 #image-list li {
-    height: 250px;
-    width: 150px;
+    height: 325px;
+    width: 200px;
     border: 1px solid black;
     list-style-type: none;
     float: left;
     margin-left: 5px;
     margin-bottom: 5px;
     text-align: center;
+    text-transform: capitalize;
 }
 
 #image-list img {
