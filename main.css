@@ -1,0 +1,15 @@
+
+#image-list {
+    display: flex;
+    list-style: none;
+}
+
+#image-list li {
+    width: 200px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+#image-list img {
+   width: 100%;
+}
