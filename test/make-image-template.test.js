@@ -1,19 +1,8 @@
+import makeImageTemplate from '../src/make-image-template.js';
+
 const test = QUnit.test;
 
 QUnit.module('Creating image template');
-
-function makeImageTemplate(image) {
-    const template = document.createElement('template');
-    const html = /*html*/`
-        <li>
-            <h3>${image.title}</h3>
-            <img src="${image.url}">
-        </li>
-    `;
-    template.innerHTML = html;
-    const dom = template.content;
-    return dom;
-}
 
 test('return dom version of HTML', assert => {
     // arrange
