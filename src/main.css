@@ -14,3 +14,18 @@ header {
 h1 {
     margin-left: 20px;
 }
+
+#image-list li {
+    height: 250px;
+    width: 150px;
+    border: 1px solid black;
+    list-style-type: none;
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#image-list img {
+    width: 100%;
+}
