@@ -3,7 +3,7 @@ import images from '../data/images.js';
 
 const imageGallery = document.getElementById('image-list');
 
-images.forEach(image => {
-    const dom = makeImageTemplate(image);
+images.forEach(images => {
+    const dom = makeImageTemplate(images);
     imageGallery.appendChild(dom);
 });
