@@ -1,7 +1,10 @@
 
 #image-list {
     display: flex;
+    flex-wrap: wrap;
+    width: 900px;
     list-style: none;
+    justify-content: space-around;
 }
 
 #image-list li {
