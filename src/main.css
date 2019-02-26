@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 30px;
+    background: skyblue;
+}
+
+#image-container li {
+    display: inline-block;
+    margin: 10px;
+    list-style-type: none;
+    float: left;
+    border: 1px dashed black;
+    list-style: none;
+    width: 260px;
+    font-size: 50px;
+}
+
+.image-card {
+    height: 400px;
+    width: 260px;
+    float: left;
+}
+
+img {
+    width: 250px;
+}
