@@ -1,6 +1,11 @@
 img {
     width: 150px;
 }
+header {
+    display: flex;
+    justify-content: center;
+}
+
 ul {
     display: flex;
     flex-direction: column;
@@ -8,4 +13,8 @@ ul {
     align-items: center;
     list-style-type: none;
     width: 600px;
+}
+li {
+    width: 250px;
+    text-align: center;
 }
