@@ -1,7 +1,7 @@
 // template function and export it
 
 
-function makeHtmlTemplate (item) {
+function makeHtmlTemplate (liObject) {
 const template = document.createElement('template');
 template.innerHTML=`<li>
  <h2>${item.title}</h2>

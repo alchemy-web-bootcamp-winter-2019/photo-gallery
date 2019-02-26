@@ -1,0 +1,13 @@
+#image-gallery {
+    color:green;
+    width:200px;
+    border: 1px solid red;
+    list-style: none;
+    padding:0;
+    text-align:center;
+    margin:8px;
+}
+
+#image-gallery img{
+width:100%;
+}
