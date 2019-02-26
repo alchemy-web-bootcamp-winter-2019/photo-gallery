@@ -2,9 +2,13 @@ function makeHtmlTemplate(image) {
     const template = document.createElement('template');
     template.innerHTML = `        
     <li>
-        <h2>${image.title}</h2>
-        <img src="${image.url}" alt="image">
-    </li>`;
+    <div id="title">
+    <p>${image.title}</p>
+    </div>
+    <div id="imgage">
+      <img src="${image.url}" alt="picture">
+    </div>
+  </li>`;
 
     return template.content;
 }
