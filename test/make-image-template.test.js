@@ -1,25 +1,25 @@
 import './html-equal.js';
-// import makeImageTemplate from '/src/image-template.js';
-import images from '../data/images.js';
+import makeImageTemplate from '/src/image-template.js';
+// import images from '../data/images.js';
 const test = QUnit.test;
 
-function makeImageTemplate(image) {
-    // const lizardType = '';
-    // if(image.description === 'lizard'){
-    //     lizardType = 
-    // }
+// function makeImageTemplate(image) {
+//     // let lizardType = '';
+//     // if(image.keyword === 'lizard'){
+//     //     lizardType = ;
+//     // }
 
-    const html = `<li>
-    <h2>${image.title}</h2>
-    <img src="${image.url}">
-</li>`;
+//     const html = `<li class='lizardType'>
+//     <h2>${image.title}</h2>
+//     <img src="${image.url}">
+// </li>`;
 
-    const template = document.createElement('template');
-    template.innerHTML = html;
-    const dom = template.content;
+//     const template = document.createElement('template');
+//     template.innerHTML = html;
+//     const dom = template.content;
 
-    return dom;
-}
+//     return dom;
+// }
 
 test('make template from image', assert => {
     //arrange
@@ -51,13 +51,13 @@ test('add class based on key in image object', assert => {
     assert.equal(animalType, 'animal');
 });
 
-test('if animal is selected then class is added', assert => {
-    //arrange 
+// test('if animal is selected then class is added', assert => {
+//     //arrange 
 
-    //act
-    const animalType = images.description;
+//     //act
+//     const animalType = images.description;
 
-    //assert
-    assert.equal(animalType, 'lizard');
-});
+//     //assert
+//     assert.equal(animalType, 'lizard');
+// });
 
