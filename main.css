@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: opx;
+}
+
+#image-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+}
+
+#image-list li {
+    list-style-type: none;
+    border: 1px solid black;
+    height: 220px;
+    width: 120px;
+    margin: 5px;
+    display: grid;
+    grid-template-rows: 30% 70%;
+}
+
+#image-list img {
+    width: 100%;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#imgage {
+    display: flex;
+    align-items: center;
+    grid-row-start: 2;
+}
