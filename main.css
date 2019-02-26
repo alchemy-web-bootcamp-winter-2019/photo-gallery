@@ -1,0 +1,29 @@
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#image-list {
+    padding: 0px;
+}
+
+#image-list li {
+    list-style-type: none;
+    border: 2px solid cornflowerblue;
+    padding: 8px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    width: 200px;
+    height: 300px;
+    float: left;
+    text-align: center;
+    font-size: .9em;
+
+}
+
+#image-list img {
+    width: 100%;
+}
