@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+}
+
+#image-container li {
+    display: inline;
+    list-style-type: none;
+    float: left;
+    margin: 20px;
+    border: 1px solid black;
+    list-style: none;
+    width: 260px;
+    font-size: 50px;
+}
+
+img {
+    width: 250px;
+}
