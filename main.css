@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: opx;
+}
+
+#image-list {
+    list-style-type: none;
+}
+
+#image-list li {
+    display: inline-block;
+    border: 1px solid black;
+    height: 150px;
+    width: 100px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+#image-list img {
+    width: 100%;
+}
