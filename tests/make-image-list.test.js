@@ -10,7 +10,10 @@ function makeImageList(image) {
         <img src="${image.url}">
     </li>`;
 
-    return html;
+    const template = document.createElement('template');
+    template.innerHTML = html;
+
+    return template.content;
 }
 
 test('function that makes html list template', assert => {
@@ -26,5 +29,5 @@ test('function that makes html list template', assert => {
     </li>`;
 
     // assert
-    assert.equal(result, expected);
+    assert.htmlEqual(result, expected);
 });
