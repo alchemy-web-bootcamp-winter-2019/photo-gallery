@@ -1,6 +1,5 @@
 import makeImageTemplate from './image-template.js';
 import images from '../data/images.js';
-console.log(images);
 
 const imageGallery = document.getElementById('image-list');
 
