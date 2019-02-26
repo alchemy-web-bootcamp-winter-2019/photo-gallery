@@ -1,0 +1,19 @@
+#image-list {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#image-list li {
+    list-style: none;
+    width: 200px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+#image-list img {
+    width: 100%;
+}
