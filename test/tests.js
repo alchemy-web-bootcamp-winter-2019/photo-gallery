@@ -5,7 +5,7 @@ const test = QUnit.test;
 
 test('template literal will appear same as static html', function(assert) {
     //arrange
-    const image = {
+    const images = {
         title: 'cityscape',
         url: 'https://c2.staticflickr.com/4/3195/2894076620_42869680eb_o.jpg'
     }
@@ -14,7 +14,7 @@ test('template literal will appear same as static html', function(assert) {
     //act
 
     //i need a function
-    const dom = makeImageTemplate(image);
+    const dom = makeImageTemplate(images);
     //assert
     assert.htmlEqual(dom, `
     <li>
