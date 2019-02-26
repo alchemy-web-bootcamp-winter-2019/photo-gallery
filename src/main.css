@@ -1,9 +1,10 @@
-ul {
+li {
     list-style: none;
     height: 300px;
     width: 200px;
     border: 1px solid black;
     padding: 5px;
+    display: inline-block;
 }
 
 img {
