@@ -1,19 +1,9 @@
 const test = QUnit.test;
 
 import './html-equal.js';
+import makeHtmlTemplate from '../src/make-html-template.js';
 
 QUnit.module('testing gallery outputs');
-
-function makeHtmlTemplate(image) {
-    const template = document.createElement('template');
-    template.innerHTML = `        
-    <li>
-        <h2>${image.title}</h2>
-        <img src="${image.url}" alt="image">
-    </li>`;
-
-    return template.content;
-}
 
 test('checking if template function outputs html correctly', assert => {
     // arrange
