@@ -1,0 +1,27 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#image-list {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#image-list li {
+    list-style: none;
+    width: 200px;
+    height: 375px;
+    margin: 10px;
+}
+
+#image-list img {
+    width: 100%;
+}
