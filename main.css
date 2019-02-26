@@ -21,9 +21,29 @@ h1 {
     float: left;
     text-align: center;
     font-size: .9em;
-
+    
 }
 
 #image-list img {
     width: 100%;
+}
+
+.narwhal {
+    background-color: lightcoral;
+}
+
+.rhino {
+    background-color: lightgray;
+}
+
+.unicorn {
+    background-color: lightskyblue;
+}
+
+.chameleon {
+    background-color: lightgreen;
+}
+
+.markhor {
+    background-color: lightsalmon;
 }

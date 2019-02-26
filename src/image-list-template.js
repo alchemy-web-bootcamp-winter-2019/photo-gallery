@@ -1,5 +1,5 @@
 function makeImageTemplate(image) { 
-    const html = /*html*/ `<li>
+    const html = /*html*/ `<li class=${image.keyword}>
         <h2>${image.title}</h2>
         <img src="${image.url}">
         </li>`;
