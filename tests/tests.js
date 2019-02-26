@@ -13,8 +13,12 @@ test('checking if template function outputs html correctly', assert => {
     };
     const expected = `        
     <li>
-        <h2>UniWhal</h2>
-        <img src="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg" alt="image">
+      <div id="title">
+        <p>${image.title}</p>
+      </div>
+      <div id="imgage">
+        <img src="${image.url}" alt="picture">
+      </div>
     </li>`;
     // act
     const result = makeHtmlTemplate(image);
