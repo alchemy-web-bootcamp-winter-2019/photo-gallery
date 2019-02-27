@@ -2,12 +2,12 @@ import './html-equal.js';
 
 const test = QUnit.test;
 
-//QUnit.module('test suite one');
+QUnit.module('test suite one');
 
 function generateHtmlTemplate(image) {
     const html = /*html*/ `<li>
     <h2>${image.title}</h2>
-    <img id="UniWhal" src=${image.url}/>
+    <img src=${image.url}>
 </li>`;
     const template = document.createElement('template');
     template.innerHTML = html;
@@ -25,18 +25,6 @@ test('make html from template with interpolation', function(assert) {
     //assert
     assert.htmlEqual(result, `<li>
     <h2>UniWhal</h2>
-    <img id="UniWhal" src="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg"/>
+    <img src="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg">
 </li>`);
 });
-
-// test('call template function that generates html template literal', function(assert) {
-//     //arrange
-//     const expected = `<li>
-//     <h2>UniWhal</h2>
-//     <img id="UniWhal" src="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg" alt="A unicorn and a narwhal nuzzling their horns">
-// </li>`;
-//     //act
-//     const result = generateHtmlTemplate('expected');
-//     //assert
-//     assert.equal(result, expected);
-// });
