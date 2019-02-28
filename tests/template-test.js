@@ -1,16 +1,7 @@
+import generateHtmlTemplate from '../src/template.js';
 const test = QUnit.test;
 
 QUnit.module('test suite one');
-
-function generateHtmlTemplate(image) {
-    const html = /*html*/ `<li>
-    <h2>${image.title}</h2>
-    <img src=${image.url}>
-</li>`;
-    const template = document.createElement('template');
-    template.innerHTML = html;
-    return template.content;
-}
 
 test('make html from template with interpolation', function(assert) {
     //arrange
@@ -27,4 +18,4 @@ test('make html from template with interpolation', function(assert) {
 </li>`);
 });
 
-export default './template.test.js';
+export default './template-test.js';
